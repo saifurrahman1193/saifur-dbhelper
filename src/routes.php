@@ -1,21 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Saifur\LogViewer\app\Http\Controllers\LogController;
+use Saifur\DBHelper\app\Http\Controllers\DBBackupController;
 
+Route::group(['prefix' => 'saifur/db-helper/db-backup', 'middleware'=>'auth:api'], function (){
 
-Route::group(['prefix' => 'saifur/log-viewer'],function (){
-    Route::post('login', [LogController::class, 'login'])->middleware("throttle:50,5");
-    Route::get('log-list', [LogController::class, 'logList']);
-
-
-    Route::group(['middleware' => 'SaifurLogViewerMiddleware'],function (){
-
-        Route::post('log-files-list-data', [LogController::class, 'logFilesListData']);
-        Route::post('single-log-file-data', [LogController::class, 'singleLogFileData']);
-        Route::post('log-file-download', [LogController::class, 'logFileDownload']);
-        Route::post('log-file-delete', [LogController::class, 'logFileDelete']);
-        Route::post('log-file-delete-multiple', [LogController::class, 'logFileDeleteMultiple']);
-    });
+    Route::post('server-db-structure-backup', [DBBackupController::class, 'serverDBStructureBackup']);
+    Route::post('server-db-data-backup', [DBBackupController::class, 'serverDBDataBackup']);
+    Route::post('server-db-status', [DBBackupController::class, 'serverDBStatus']);
 
 });

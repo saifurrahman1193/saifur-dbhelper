@@ -1,9 +1,8 @@
-# Saifur-LogViewer
---------------------
-A dynamic log viewer
+# Saifur-DBHelper
+A DB Helper providing features like DB backup 
 
 ## Contents
-- [Saifur-LogViewer](#saifur-logviewer)
+- [Saifur-DBHelper](#saifur-dbhelper)
   - [Contents](#contents)
   - [Documentation, Installation, and Usage Instructions](#documentation-installation-and-usage-instructions)
     - [Commands](#commands)
@@ -12,14 +11,12 @@ A dynamic log viewer
   - [License](#license)
 
 ## Documentation, Installation, and Usage Instructions
-------------------------------------------------------
 This package allows you to manage your logs.
 
 Once installed you can do stuff like this:
 
 
 ### Commands
------------------
 
 ```
 composer dump-autoload
@@ -27,7 +24,6 @@ php artisan vendor:publish --tag=public --force
 ```
 
 ## Contributor
-----------
 
 - Md. Saifur Rahman
 
@@ -37,10 +33,7 @@ php artisan vendor:publish --tag=public --force
 | [![Hackerrank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/saifur_rahman111) | [![Beecrowd](https://img.shields.io/badge/Beecrowd-%23009639.svg?style=for-the-badge&logo=Bugcrowd&logoColor=white)](https://www.beecrowd.com.br/judge/en/profile/18847) | [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://leetcode.com/saifurrahman1193) | [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/playlist?list=PLwJWgDKTF5-xdQttKl7cRx8Yhukv7Ilmg)| |
 
 ## Alternatives
--------------------
 
-- [ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer) 
 
 ## License
-----------------
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
