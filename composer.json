@@ -1,9 +1,9 @@
 {
-    "name": "saifur/dbhelper",
-    "description": "This a package all about DB helper",
+    "name": "saifur/logviewer",
+    "description": "This a package all about log viewer",
     "autoload": {
         "psr-4": {
-            "Saifur\\Dbhelper\\": "src/"
+            "Saifur\\LogViewer\\": "src/"
         }
     },
     "require": {}

@@ -1,9 +1,9 @@
-# Saifur-DBHelper
+# Saifur-LogViewer
 --------------------
-A DB Helper providing features like DB backup 
+A dynamic log viewer
 
 ## Contents
-- [Saifur-DBHelper](#saifur-dbhelper)
+- [Saifur-LogViewer](#saifur-logviewer)
   - [Contents](#contents)
   - [Documentation, Installation, and Usage Instructions](#documentation-installation-and-usage-instructions)
     - [Commands](#commands)
@@ -39,6 +39,7 @@ php artisan vendor:publish --tag=public --force
 ## Alternatives
 -------------------
 
+- [ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer) 
 
 ## License
 ----------------
