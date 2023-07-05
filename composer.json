@@ -1,0 +1,10 @@
+{
+    "name": "saifur/dbhelper",
+    "description": "This a package all about DB helper",
+    "autoload": {
+        "psr-4": {
+            "Saifur\\Dbhelper\\": "src/"
+        }
+    },
+    "require": {}
+}
