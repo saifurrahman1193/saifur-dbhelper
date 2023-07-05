@@ -1,10 +1,26 @@
 {
     "name": "saifur/dbhelper",
     "description": "This a package all about DB helper",
+    "authors": [
+        {
+            "name": "Mohamed Saifur Rahman",
+            "email": "saifur.rahman1193@gmail.com",
+            "homepage": "https://saifurrahman.my.canva.site/",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "keywords": [
+        "logviewer",
+        "laravel"
+    ],
     "autoload": {
         "psr-4": {
             "Saifur\\Dbhelper\\": "src/"
         }
     },
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0"
+    }
 }
