@@ -11,16 +11,25 @@
     ],
     "license": "MIT",
     "keywords": [
-        "logviewer",
+        "db-helper",
+        "db-backup",
+        "db-structure-backup",
+        "db-data-backup",
+        "db-full-backup",
+        "db-full-backup-zip",
+        "db-table-structure-backup",
+        "db-view-structure-backup",
+        "db-procedure-structure-backup",
+        "db-function-structure-backup",
         "laravel"
     ],
     "autoload": {
         "psr-4": {
-            "Saifur\\Dbhelper\\": "src/"
+            "Saifur\\DBHelper\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.4|^8.0"
+        "php": "^7.3.11|^8.0"
     }
 }

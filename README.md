@@ -6,6 +6,11 @@ A DB Helper providing features like DB backup
   - [Contents](#contents)
   - [Documentation, Installation, and Usage Instructions](#documentation-installation-and-usage-instructions)
     - [Commands](#commands)
+    - [API](#api)
+      - [Request: Server DB Full Backup](#request-server-db-full-backup)
+      - [Request: Server DB Structure Backup](#request-server-db-structure-backup)
+      - [Request: Server DB Data Backup](#request-server-db-data-backup)
+      - [Request: Server DB Status](#request-server-db-status)
   - [Contributor](#contributor)
   - [Alternatives](#alternatives)
   - [License](#license)
@@ -22,6 +27,67 @@ Once installed you can do stuff like this:
 composer dump-autoload
 php artisan vendor:publish --tag=public --force
 ```
+
+### API
+
+<!-- make it postman document and markdown code -->
+
+#### Request: Server DB Full Backup
+- Method: POST
+- URL: `http://localhost:8001/saifur/db-helper/db-backup/server-db-full-backup`
+- Headers:
+    - Authorization: Bearer \<your_token>
+    - Content-Type: application/json
+- Body:
+    - form-data:
+        | Key                          | Value         |
+        |------------------------------|---------------|
+        | except_tables[0]             | activity_log  |
+        | except_tables[1]             | audit_trail   |
+        | table_rules[0][table_name]   | audit_trail   |
+        | table_rules[0][row_limit]    | 100           |
+        | table_rules[0][order_by]     | id            |
+        | table_rules[0][order_type]   | DESC          |
+        | table_rules[1][table_name]   | activity_log  |
+        | table_rules[1][row_limit]    | 100           |
+        | table_rules[1][order_by]     | id            |
+        | table_rules[1][order_type]   | DESC          |
+
+#### Request: Server DB Structure Backup
+- Method: POST
+- URL: `http://localhost:8001/saifur/db-helper/db-backup/server-db-structure-backup`
+- Headers:
+    - Authorization: Bearer \<your_token>
+    - Content-Type: application/json
+
+#### Request: Server DB Data Backup
+- Method: POST
+- URL: `http://localhost:8001/saifur/db-helper/db-backup/server-db-data-backup`
+- Headers:
+    - Authorization: Bearer \<your_token>
+    - Content-Type: application/json
+- Body:
+    - form-data:
+        - except_tables[0]: activity_log
+        - except_tables[1]: audit_trail
+        - table_rules[0][table_name]: audit_trail
+        - table_rules[0][row_limit]: 100
+        - table_rules[0][order_by]: id
+        - table_rules[0][order_type]: DESC
+        - table_rules[1][table_name]: activity_log
+        - table_rules[1][row_limit]: 100
+        - table_rules[1][order_by]: id
+        - table_rules[1][order_type]: DESC
+
+#### Request: Server DB Status
+- Method: POST
+- URL: `http://localhost:8001/saifur/db-helper/db-backup/server-db-status`
+- Headers:
+    - Authorization: Bearer \<your_token>
+    - Content-Type: application/json
+- Body:
+    - form-data:
+        - view: html
 
 ## Contributor
 
