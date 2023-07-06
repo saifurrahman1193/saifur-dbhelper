@@ -24,6 +24,7 @@ Once installed you can do stuff like this:
 ### Commands
 
 ```
+composer require saifur/dbhelper
 composer dump-autoload
 php artisan vendor:publish --tag=public --force
 ```
