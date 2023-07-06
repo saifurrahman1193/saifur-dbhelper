@@ -1,6 +1,10 @@
 # Saifur-DBHelper
 A DB Helper providing features like DB backup 
 
+<a href="https://packagist.org/packages/saifur/dbhelper"><img src="https://img.shields.io/packagist/dt/saifur/dbhelper" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/saifur/dbhelper"><img src="https://img.shields.io/packagist/v/saifur/dbhelper" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/saifur/dbhelper"><img src="https://img.shields.io/packagist/l/saifur/dbhelper" alt="License"></a>
+
 ## Contents
 - [Saifur-DBHelper](#saifur-dbhelper)
   - [Contents](#contents)
