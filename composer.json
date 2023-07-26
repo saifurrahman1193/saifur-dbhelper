@@ -10,6 +10,7 @@
         }
     ],
     "license": "MIT",
+    "homepage": "https://github.com/saifurrahman1193/saifur-dbhelper",
     "keywords": [
         "db-helper",
         "db-backup",
@@ -32,5 +33,7 @@
     "require": {
         "php": "^7.3.11|^8.0",
         "illuminate/support": "^8.0"
+    },
+    "suggest": {
     }
 }
